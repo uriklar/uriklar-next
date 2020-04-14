@@ -1,8 +1,8 @@
+import sanityClient from "../uriklarnextapi/client";
 import PostPreview from "../components/post-preview";
 
-const fetch = require("node-fetch");
-
 const Index = ({ posts }) => {
+  console.log(posts);
   return (
     <div>
       {posts.map((post) => (
@@ -14,14 +14,10 @@ const Index = ({ posts }) => {
 
 export async function getStaticProps() {
   // Call an external API endpoint to get posts.
-  const res = await fetch(
-    "https://api.rss2json.com/v1/api.json?rss_url=https://medium.com/feed/@uriklar"
-  );
-  const response = await res.json();
-
+  const posts = await sanityClient.fetch('*[_type == "post"]');
   return {
     props: {
-      posts: response.items,
+      posts,
     },
   };
 }

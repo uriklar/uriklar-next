@@ -64,7 +64,7 @@ export default function Sidebar() {
           className="w-32 h-32 rounded-full"
           src="https://uriklar.dev/static/avatar-54a6aa9a88ca26c59e7af6e59a4bc84a.jpg"
         />
-        <p className="mt-4 w-3/5 text-center">
+        <p className="mt-4 w-3/5 lg:w-full text-center">
           Hello, I'm Uri Klar. A Javascript Engineer building web and mobile
           apps of all shapes and sizes.
         </p>
