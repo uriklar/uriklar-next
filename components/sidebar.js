@@ -50,7 +50,7 @@ export default function Sidebar() {
 
   return (
     <aside className="bg-brand-500 text-white p-4 lg:w-1/5 flex flex-col">
-      <div className="relative text-2xl font-semibold text-center">
+      <div className="relative text-2xl font-medium text-center">
         <HamburgerMenu onClick={() => setOpen(!open)} />
         Uri Klar
       </div>
@@ -74,7 +74,7 @@ export default function Sidebar() {
             const Icon = socialIcon.icon;
 
             return (
-              <li className="mr-2 last:mr-0 mt-4">
+              <li className="mr-2 last:mr-0 mt-4" key={socialIcon.url}>
                 <a className="social-svg cursor-pointer" target="_blank">
                   <Icon />
                 </a>

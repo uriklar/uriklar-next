@@ -2,11 +2,10 @@ import sanityClient from "../uriklarnextapi/client";
 import PostPreview from "../components/post-preview";
 
 const Index = ({ posts }) => {
-  console.log(posts);
   return (
     <div>
       {posts.map((post) => (
-        <PostPreview post={post} />
+        <PostPreview key={post.slug.current} post={post} />
       ))}
     </div>
   );

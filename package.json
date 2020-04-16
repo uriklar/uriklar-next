@@ -12,11 +12,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^1.149.7",
     "next": "^9.3.4",
     "node-fetch": "^2.6.0",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
+    "react-highlight.js": "^1.0.7",
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {

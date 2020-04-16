@@ -5,3 +5,16 @@
 .social-svg svg path {
   fill: white;
 }
+
+a {
+  @apply underline text-brand-400;
+}
+
+a:hover {
+  @apply text-brand-600 transition-colors duration-200;
+}
+
+ol ol {
+  list-style-type: lower-alpha !important;
+  padding-left: 20px;
+}

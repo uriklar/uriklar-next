@@ -18,6 +18,9 @@ module.exports = {
       spacing: {
         "72": "18rem",
       },
+      fontFamily: {
+        body: ["Rubik"],
+      },
     },
   },
   variants: {},
