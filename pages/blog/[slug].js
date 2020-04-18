@@ -16,7 +16,7 @@ export default ({ post }) => {
   }
 
   return (
-    <div className="">
+    <div className="lg:max-w-screen-md flex flex-col items-center w-full">
       <h1 className="text-purple-500 text-4xl font-bold leading-tight">
         {post.title}
       </h1>
@@ -46,7 +46,7 @@ export default ({ post }) => {
           </a>
         </figcaption>
       </figure>
-      <div className="text-lg lg:w-4/6 w-full">
+      <div className="text-lg w-full">
         <BlockContent
           blocks={post.body}
           serializers={serializers}

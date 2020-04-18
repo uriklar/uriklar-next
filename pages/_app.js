@@ -16,7 +16,7 @@ function Layout({ children }) {
 }
 
 function ContentContainer({ children }) {
-  return <main className="p-8 flex flex-col ">{children}</main>;
+  return <main className="p-8 flex flex-col items-center">{children}</main>;
 }
 export default function App({ Component, pageProps }) {
   return (
