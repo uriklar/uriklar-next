@@ -6,12 +6,23 @@
   fill: white;
 }
 
-a {
-  @apply underline text-brand-400;
+a:not(.initial) {
+  background-size: 100% 200%;
+  background-position-y: 10%;
+  -webkit-transition: 200ms background-position-y;
+  transition: 200ms background-position-y;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0) 50%,
+    #ffb600 50%
+  );
+  @apply no-underline font-bold text-brand-500;
 }
 
-a:hover {
-  @apply text-brand-600 transition-colors duration-200;
+a:not(.initial):hover {
+  -webkit-transition: 200ms background-position-y;
+  transition: 200ms background-position-y;
+  background-position-y: 15%;
 }
 
 ol ol {

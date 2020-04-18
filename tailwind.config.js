@@ -13,13 +13,20 @@ module.exports = {
           800: "#00262D",
           900: "#00191E",
         },
-        purple: "#5A4464",
+        brand2: "#1298b3",
+        brand3: "#A4DCD9",
+        yellow: "#ffb600",
+        sea: "#011638",
+        background: "#F6FCFB",
       },
       spacing: {
         "72": "18rem",
       },
       fontFamily: {
-        body: ["Rubik"],
+        body: ["Source Sans Pro, sans-serif;"],
+      },
+      gridTemplateColumns: {
+        "post-preview": "8rem 1fr",
       },
     },
   },

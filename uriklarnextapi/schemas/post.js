@@ -38,7 +38,7 @@ export default {
     },
     {
       name: "mainImageCreditUrl",
-      title: "Main Image Credit Name",
+      title: "Main Image Credit Url",
       type: "string",
     },
     {
@@ -51,6 +51,11 @@ export default {
       name: "publishedAt",
       title: "Published at",
       type: "datetime",
+    },
+    {
+      name: "excerpt",
+      title: "Excerpt",
+      type: "text",
     },
     {
       name: "body",

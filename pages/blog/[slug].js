@@ -16,8 +16,8 @@ export default ({ post }) => {
   }
 
   return (
-    <div className="lg:w-4/6 p-12 w-full">
-      <h1 className="text-purple-500 text-4xl font-medium leading-tight">
+    <div className="">
+      <h1 className="text-purple-500 text-4xl font-bold leading-tight">
         {post.title}
       </h1>
       <div>
@@ -31,7 +31,7 @@ export default ({ post }) => {
           style={{ height: "22rem" }}
           src={post.imageUrl}
         ></img>
-        <figcaption className="text-gray-500 text-center mt-1 font-light">
+        <figcaption className="text-gray-500 text-center mt-1 mb-6 font-light">
           Photo by{" "}
           <a
             href={post.mainImageCreditUrl}
@@ -46,7 +46,7 @@ export default ({ post }) => {
           </a>
         </figcaption>
       </figure>
-      <div className="text-lg">
+      <div className="text-lg lg:w-4/6 w-full">
         <BlockContent
           blocks={post.body}
           serializers={serializers}

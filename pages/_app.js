@@ -1,5 +1,5 @@
 import "../styles/index.css";
-import Sidebar from "../components/sidebar";
+import Header from "../components/header";
 import Head from "next/head";
 
 /*
@@ -9,16 +9,14 @@ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
 
 function Layout({ children }) {
   return (
-    <div className="flex h-screen flex-col lg:flex-row font-body">
+    <div className="min-h-screen border-t-4 border-b-4 border-brand2 border-solid font-body lg:text-lg bg-background lg:px-16 ">
       {children}
     </div>
   );
 }
 
 function ContentContainer({ children }) {
-  return (
-    <main className="flex flex-1 justify-center overflow-auto">{children}</main>
-  );
+  return <main className="p-8 flex flex-col ">{children}</main>;
 }
 export default function App({ Component, pageProps }) {
   return (
@@ -31,12 +29,12 @@ export default function App({ Component, pageProps }) {
           key="viewport"
         />
         <link
-          href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+          href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
           rel="stylesheet"
         />
       </Head>
 
-      <Sidebar />
+      <Header />
       <ContentContainer>
         <Component {...pageProps} />
       </ContentContainer>

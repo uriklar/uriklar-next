@@ -9,12 +9,6 @@
  *  }
  */
 
-const separator = {
-  name: "separator",
-  title: "Separator",
-  type: "block",
-};
-
 export default {
   title: "Block Content",
   name: "blockContent",
@@ -31,6 +25,7 @@ export default {
         { title: "H4", value: "h4" },
         { title: "Quote", value: "blockquote" },
         { title: "Separator", value: "separator" },
+        { title: "Code", value: "code" },
       ],
       lists: [
         { title: "Bullet", value: "bullet" },
@@ -43,6 +38,7 @@ export default {
         decorators: [
           { title: "Strong", value: "strong" },
           { title: "Emphasis", value: "em" },
+          { title: "Code", value: "code" },
         ],
         // Annotations can be any object structure – e.g. a link or a footnote.
         annotations: [
@@ -70,9 +66,33 @@ export default {
     {
       type: "image",
       options: { hotspot: true },
+      fields: [
+        {
+          type: "text",
+          name: "alt",
+          title: "Alternative text",
+          description: `Some of your visitors cannot see images, 
+            be they blind, color-blind, low-sighted; 
+            alternative text is of great help for those 
+            people that can rely on it to have a good idea of 
+            what\'s on your page.`,
+          options: {
+            isHighlighted: true,
+          },
+        },
+        {
+          type: "text",
+          name: "alignment",
+          title: "Alignment",
+          description: "text alignment",
+        },
+      ],
     },
     {
       type: "code",
+    },
+    {
+      type: "codesandbox",
     },
   ],
 };
