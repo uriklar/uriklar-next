@@ -4,16 +4,16 @@ import axios from "axios";
 export default () => {
   const [email, setEmail] = useState("");
   const [state, setState] = useState("IDLE");
-  const [error, setError] = useState(null);
+  const [errorMessage, setErrorMessage] = useState(null);
 
   const subscribe = async () => {
     setState("LOADING");
-    setError(null);
+    setErrorMessage(null);
     try {
       const response = await axios.post("/api/newsletter", { email });
       setState("SUCCESS");
     } catch (e) {
-      setError(e.response.data.error);
+      setErrorMessage(e.response.data.error);
       setState("ERROR");
     }
   };
@@ -46,7 +46,9 @@ export default () => {
           Subscribe
         </button>
       </div>
-      {state === "ERROR" && <p className="w-1/2 mt-2 text-red-600">{error}</p>}
+      {state === "ERROR" && (
+        <p className="w-1/2 mt-2 text-red-600">{errorMessage}</p>
+      )}
       {state === "SUCCESS" && (
         <p className="w-1/2 mt-2 text-green-600">Success!</p>
       )}
