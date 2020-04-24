@@ -11,11 +11,15 @@ function Block({ node, children }) {
   }
 
   if (node.style === "h2") {
-    return <h3 className="text-3xl font-bold mt-12 mb-4">{children}</h3>;
+    return (
+      <h3 className="text-3xl text-brand2 font-bold mt-12 mb-4">{children}</h3>
+    );
   }
 
   if (node.style === "h3") {
-    return <h3 className="text-2xl font-bold mt-4 mb-4">{children}</h3>;
+    return (
+      <h3 className="text-2xl text-sea font-bold mt-4 mb-4">{children}</h3>
+    );
   }
 
   if (node.style === "separator") {

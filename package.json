@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "next",
+    "dev": "NODE_OPTIONS='--inspect' next",
     "build": "next build",
     "start": "next start"
   },
@@ -14,6 +14,8 @@
   "dependencies": {
     "@sanity/block-content-to-react": "^2.0.7",
     "@sanity/client": "^1.149.7",
+    "@types/axios": "^0.14.0",
+    "axios": "^0.19.2",
     "next": "^9.3.4",
     "node-fetch": "^2.6.0",
     "react": "^16.13.1",
@@ -22,9 +24,13 @@
     "tailwindcss": "^1.2.0"
   },
   "devDependencies": {
+    "@types/node": "^13.13.2",
+    "@types/node-fetch": "^2.5.6",
+    "@types/react": "^16.9.34",
     "autoprefixer": "^9.7.6",
     "babel-plugin-inline-react-svg": "^1.1.1",
     "postcss-import": "^12.0.1",
-    "postcss-preset-env": "^6.7.0"
+    "postcss-preset-env": "^6.7.0",
+    "typescript": "^3.8.3"
   }
 }

@@ -17,7 +17,7 @@ export default ({ post }) => {
 
   return (
     <div className="lg:max-w-screen-md flex flex-col items-center w-full">
-      <h1 className="text-purple-500 text-4xl font-bold leading-tight">
+      <h1 className="text-sea text-4xl font-bold leading-tight">
         {post.title}
       </h1>
       <div>

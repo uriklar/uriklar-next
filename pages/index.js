@@ -3,7 +3,7 @@ import Newsletter from "../components/newsletter";
 import { yearsDiff } from "../utils";
 const Index = () => {
   return (
-    <div>
+    <>
       <div className="text-4xl lg:text-5xl font-bold mb-4">
         Hi, I'm Uri Klar{" "}
         <span role="img" aria-label="Wave">
@@ -12,7 +12,7 @@ const Index = () => {
       </div>
 
       <div
-        className="grid gap-6 items-center max-w-2xl"
+        className="grid gap-6 items-center max-w-2xl mb-12"
         style={{ gridTemplateColumns: "20px 1fr" }}
       >
         <div role="img" aria-label="Programmer" className="text-2xl">
@@ -70,7 +70,9 @@ const Index = () => {
           </span>
         </div>
       </div>
-    </div>
+
+      <Newsletter />
+    </>
   );
 };
 

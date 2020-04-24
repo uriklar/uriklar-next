@@ -1,6 +1,29 @@
+import { useState } from "react";
+import axios from "axios";
+import Loader from "./loader";
+
 export default () => {
+  const [email, setEmail] = useState("");
+  const [state, setState] = useState("IDLE");
+  const [error, setError] = useState(null);
+
+  const subscribe = async () => {
+    setState("LOADING");
+    setError(null);
+    try {
+      const response = await axios.post("/api/newsletter", { email });
+      setState("IDLE");
+      if (!response.error) {
+        setState("SUCCESS");
+      }
+    } catch (e) {
+      setError(e.response.data.error);
+      setState("IDLE");
+    }
+  };
+
   return (
-    <div className="bg-gray-100 flex flex-col items-center w-full p-12">
+    <div className="flex flex-col items-center w-full p-8 border-gray-500 border-solid border rounded-sm">
       <h2 className="text-3xl font-bold text-center">
         I also have a newsletter!
       </h2>
@@ -8,19 +31,29 @@ export default () => {
         It includes intersting stuff about tech and will arrive to your mailbox
         no more than once every 2 weeks
       </p>
-      <div className="flex w-1/2 justify-center mt-5">
+      <div className="flex w-1/2 justify-center mt-5 flex-col lg:flex-row">
         <input
-          className="appearance-none w-2/3 border border-gray-500 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-600"
+          className="appearance-none mb-2 lg:mb-0 w-full lg:w-2/3 border border-gray-500 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-600"
           type="text"
           placeholder="Enter Email"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
         />
         <button
-          className="ml-2 shadow bg-brand2 focus:shadow-outline focus:outline-none text-brand-500 font-bold py-2 px-4 rounded"
+          className={`lg:ml-2 w-full lg:w-1/3 shadow bg-brand2 focus:shadow-outline focus:outline-none text-center text-white font-bold py-2 px-4 rounded flex ${
+            state === "LOADING" ? "button-gradient-loading" : ""
+          }`}
           type="button"
+          disabled={state === "LOADING"}
+          onClick={subscribe}
         >
           Subscribe
         </button>
       </div>
+      {error && <p className="w-1/2 mt-2 text-red-600">{error}</p>}
+      {state === "SUCCESS" && (
+        <p className="w-1/2 mt-2 text-green-600">Success!</p>
+      )}
     </div>
   );
 };

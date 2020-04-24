@@ -2,6 +2,7 @@ import "../styles/index.css";
 import Header from "../components/header";
 import Head from "next/head";
 
+
 /*
 Attributions:
 Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
@@ -9,14 +10,18 @@ Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik"
 
 function Layout({ children }) {
   return (
-    <div className="min-h-screen border-t-4 border-b-4 border-brand2 border-solid font-body lg:text-lg bg-background lg:px-16 ">
+    <div className="min-h-screen border-t-4 border-b-4 border-brand2 border-solid font-body lg:text-lg bg-background lg:px-16 flex flex-col items-center">
       {children}
     </div>
   );
 }
 
 function ContentContainer({ children }) {
-  return <main className="p-8 flex flex-col items-center">{children}</main>;
+  return (
+    <main className="p-8 flex flex-col items-center max-w-screen-lg">
+      {children}
+    </main>
+  );
 }
 export default function App({ Component, pageProps }) {
   return (
