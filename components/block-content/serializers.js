@@ -1,4 +1,5 @@
 import Highlight from "react-highlight.js";
+import CodeIcon from "../../svgs/code.svg";
 
 function Block({ node, children }) {
   if (node.style === "blockquote") {
@@ -23,7 +24,16 @@ function Block({ node, children }) {
   }
 
   if (node.style === "separator") {
-    return <div className="h-12 w-full bg-indigo-700">&nbsp;</div>;
+    return (
+      <div className="my-8 w-full h-px bg-brand-200 relative flex justify-center">
+        <div
+          className="absolute bg-background px-4 separator-icon-container"
+          style={{ top: "-16px" }}
+        >
+          <CodeIcon height="32px" width="32px" />
+        </div>
+      </div>
+    );
   }
 
   return <p className="mb-4 leading-relaxed">{children}</p>;

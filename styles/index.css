@@ -79,3 +79,7 @@ ol ol {
   background-size: 400% 400%;
   animation: gradient 2s ease infinite;
 }
+
+.separator-icon-container svg path {
+  fill: #005465;
+}
