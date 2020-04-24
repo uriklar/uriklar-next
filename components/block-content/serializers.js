@@ -31,7 +31,7 @@ function Block({ node, children }) {
 
 function Code({ node }) {
   return (
-    <div className="mb-4">
+    <div className="mb-4" style={{ maxWidth: "90vw" }}>
       <Highlight language={node.language}>{node.code}</Highlight>
     </div>
   );
