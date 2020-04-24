@@ -31,8 +31,8 @@ const Index = () => {
         <div>
           I love teaching, and helping developers make their first steps in web
           development. Checkout my{" "}
-          <Link href="/blog" target="_blank">
-            <a>Blog </a>
+          <Link href="/blog">
+            <a target="_blank">Blog </a>
           </Link>
           and{" "}
           <a href="https://www.youtube.com/channel/UC3OjyuPH4oZtuYPqI-W8OHw">
