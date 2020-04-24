@@ -25,7 +25,10 @@ function Block({ node, children }) {
 
   if (node.style === "separator") {
     return (
-      <div className="my-8 w-full h-px bg-brand-200 relative flex justify-center">
+      <div
+        className="my-8 w-full bg-brand-200 relative flex justify-center"
+        style={{ height: "2px" }}
+      >
         <div
           className="absolute bg-background px-4 separator-icon-container"
           style={{ top: "-16px" }}
