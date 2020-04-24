@@ -1,6 +1,5 @@
 import { useState } from "react";
 import axios from "axios";
-import Loader from "./loader";
 
 export default () => {
   const [email, setEmail] = useState("");
@@ -12,10 +11,7 @@ export default () => {
     setError(null);
     try {
       const response = await axios.post("/api/newsletter", { email });
-      setState("IDLE");
-      if (!response.error) {
-        setState("SUCCESS");
-      }
+      setState(response.error ? "IDLE" : "SUCCESS");
     } catch (e) {
       setError(e.response.data.error);
       setState("IDLE");
