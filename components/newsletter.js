@@ -11,10 +11,10 @@ export default () => {
     setError(null);
     try {
       const response = await axios.post("/api/newsletter", { email });
-      setState(response.error ? "IDLE" : "SUCCESS");
+      setState("SUCCESS");
     } catch (e) {
       setError(e.response.data.error);
-      setState("IDLE");
+      setState("ERROR");
     }
   };
 
@@ -46,7 +46,7 @@ export default () => {
           Subscribe
         </button>
       </div>
-      {error && <p className="w-1/2 mt-2 text-red-600">{error}</p>}
+      {state === "ERROR" && <p className="w-1/2 mt-2 text-red-600">{error}</p>}
       {state === "SUCCESS" && (
         <p className="w-1/2 mt-2 text-green-600">Success!</p>
       )}
