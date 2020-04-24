@@ -46,17 +46,13 @@ export default async (req, res) => {
 
     const response = await axios.post(url, data, { headers });
 
-    // Error
-    if (response.status >= 400) {
-      return res.status(400).json({
-        error: `Something went wrong... Send me an email at uriklar@gmail.com and I'll add you to the list.`,
-      });
-    }
-
-    // Success!
+    // Success
     return res.status(201).json({ error: null });
   } catch (error) {
-    // Exception
-    return res.status(500).json({ error: error.message || error.toString() });
+    return res.status(400).json({
+      error: `Oops, something went wrong... Send me an email at uriklar@gmail.com and I'll add you to the list.`,
+    });
+
+    // Report error to Sentry or whatever
   }
 };
