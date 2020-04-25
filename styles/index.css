@@ -2,10 +2,6 @@
 @import "tailwindcss/components";
 @import "tailwindcss/utilities";
 
-.social-svg svg path {
-  fill: white;
-}
-
 a:not(.initial) {
   background-size: 100% 200%;
   background-position-y: 10%;
