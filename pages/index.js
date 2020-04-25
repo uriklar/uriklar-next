@@ -70,8 +70,6 @@ const Index = () => {
           </span>
         </div>
       </div>
-
-      <Newsletter />
     </>
   );
 };

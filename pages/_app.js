@@ -1,7 +1,7 @@
 import "../styles/index.css";
-import Header from "../components/header";
 import Head from "next/head";
-
+import Header from "../components/header";
+import Newsletter from "../components/newsletter";
 /*
 Attributions:
 Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
@@ -41,6 +41,7 @@ export default function App({ Component, pageProps }) {
       <Header />
       <ContentContainer>
         <Component {...pageProps} />
+        <Newsletter />
       </ContentContainer>
       <link
         rel="stylesheet"
