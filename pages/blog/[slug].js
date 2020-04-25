@@ -1,6 +1,6 @@
 import sanityClient from "../../uriklarnextapi/client";
 import { useRouter } from "next/router";
-import { timeSince } from "../../utils";
+import { timeSince } from "../../lib/utils";
 import BlockContent from "@sanity/block-content-to-react";
 import serializers from "../../components/block-content/serializers";
 

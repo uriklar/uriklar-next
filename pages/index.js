@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Newsletter from "../components/newsletter";
-import { yearsDiff } from "../utils";
+import { yearsDiff } from "../lib/utils";
 const Index = () => {
   return (
     <>

@@ -1,7 +1,11 @@
 import "../styles/index.css";
 import Head from "next/head";
+import Router from "next/router";
 import Header from "../components/header";
 import Newsletter from "../components/newsletter";
+import * as gtag from "../lib/gtag";
+
+Router.events.on("routeChangeComplete", (url) => gtag.pageview(url));
 /*
 Attributions:
 Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>

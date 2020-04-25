@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { timeSince } from "../utils";
+import { timeSince } from "../lib/utils";
 
 export default function PostPreview({ post }) {
   return (
