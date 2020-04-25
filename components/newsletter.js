@@ -27,7 +27,7 @@ export default () => {
         It includes intersting stuff about tech and will arrive to your mailbox
         no more than once every 2 weeks
       </p>
-      <div className="flex w-1/2 justify-center mt-5 flex-col lg:flex-row">
+      <div className="flex w-1/2 lg:w-2/3 justify-center mt-5 flex-col lg:flex-row">
         <input
           className="appearance-none mb-2 lg:mb-0 w-full lg:w-2/3 border border-gray-500 rounded py-2 px-4 text-gray-700 leading-tight focus:outline-none focus:border-gray-600"
           type="text"
