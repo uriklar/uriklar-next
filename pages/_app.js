@@ -2,7 +2,6 @@ import "../styles/index.css";
 import Header from "../components/header";
 import Head from "next/head";
 
-
 /*
 Attributions:
 Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
@@ -18,7 +17,7 @@ function Layout({ children }) {
 
 function ContentContainer({ children }) {
   return (
-    <main className="p-8 flex flex-col items-center max-w-screen-lg">
+    <main className="p-8 flex flex-col max-w-screen-lg lg:w-2/3">
       {children}
     </main>
   );

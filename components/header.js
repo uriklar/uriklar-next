@@ -2,7 +2,7 @@ import Link from "next/link";
 
 export default () => {
   return (
-    <header className="pt-12 px-8 flex flex-col max-w-screen-lg lg:w-9/12 lg:flex-row lg:justify-between lg:items-center lg:text-xl">
+    <header className="pt-12 px-8 flex flex-col max-w-screen-lg lg:w-2/3 lg:flex-row lg:justify-between lg:items-center lg:text-xl">
       <div className="flex items-center">
         <Link href="/">
           <>
