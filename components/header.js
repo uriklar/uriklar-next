@@ -21,15 +21,12 @@ export default () => {
         </div>
       </div>
 
-      <nav className="mt-8 flex justify-between gap-4 w-40 lg:w-56">
+      <nav className="mt-8 flex justify-between gap-4 w-24 lg:w-40">
         <Link href="/">
           <a>Home</a>
         </Link>
         <Link href="/blog">
           <a>Blog</a>
-        </Link>
-        <Link href="/about">
-          <a>About</a>
         </Link>
       </nav>
     </header>
