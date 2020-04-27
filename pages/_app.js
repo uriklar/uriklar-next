@@ -37,9 +37,18 @@ export default function App({ Component, pageProps }) {
           key="viewport"
         />
         <link
+          rel="preload"
           href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
-          rel="stylesheet"
+          as="style"
+          onload="this.onload=null;this.rel='stylesheet'"
         />
+        <noscript>
+          <link
+            href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
+            rel="stylesheet"
+            type="text/css"
+          />
+        </noscript>
       </Head>
 
       <Header />
