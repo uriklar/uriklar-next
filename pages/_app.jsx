@@ -30,12 +30,18 @@ export default function App({ Component, pageProps }) {
   return (
     <Layout>
       <Head>
-        <title>Uri Klar</title>
+        <title>Uri Klar - Front End Engineer</title>
         <meta
           name="viewport"
           content="initial-scale=1.0, width=device-width"
           key="viewport"
         />
+        <meta
+          name="description"
+          content="I'm Uri Klar and I'm a Senior FrontEnd Engineer at HoneyBook. I love coding, teaching code and genrally building Web and Mobile apps of all shapes and sizes."
+        />
+        <meta name=" theme-color" content="#005465">
+
         <link
           rel="preload"
           href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;700&display=swap"
