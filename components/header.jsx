@@ -10,7 +10,7 @@ export default () => {
             <img
               alt="Uri Klar"
               className="w-32 h-32 rounded-full mr-4"
-              src="https://uriklar.dev/static/avatar-54a6aa9a88ca26c59e7af6e59a4bc84a.jpg"
+              src="/avatar.jpg"
             />
           </a>
         </Link>
