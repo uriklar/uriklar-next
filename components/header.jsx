@@ -25,9 +25,10 @@ export default () => {
         <Link href="/">
           <a>Home</a>
         </Link>
-        <Link href="/blog">
-          <a>Blog</a>
-        </Link>
+
+        <a href="https://medium.com/@uriklar" target="_blank">
+          Blog
+        </a>
       </nav>
     </header>
   );
