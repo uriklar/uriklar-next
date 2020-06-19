@@ -40,7 +40,7 @@ export default function App({ Component, pageProps }) {
           name="description"
           content="I'm Uri Klar and I'm a Senior FrontEnd Engineer at HoneyBook. I love coding, teaching code and genrally building Web and Mobile apps of all shapes and sizes."
         />
-        <meta name=" theme-color" content="#005465">
+        <meta name=" theme-color" content="#005465" />
 
         <link
           rel="preload"
