@@ -38,7 +38,7 @@ export default function App({ Component, pageProps }) {
         />
         <meta
           name="description"
-          content="I'm Uri Klar and I'm a Senior FrontEnd Engineer at HoneyBook. I love coding, teaching code and genrally building Web and Mobile apps of all shapes and sizes."
+          content="I'm Uri Klar and I'm the Front End Lead at HoneyBook. I love coding, teaching code and genrally building Web and Mobile apps of all shapes and sizes."
         />
         <meta name=" theme-color" content="#005465" />
 
