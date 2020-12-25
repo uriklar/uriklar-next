@@ -19,7 +19,7 @@ const Index = () => {
           👨‍💻
         </div>
         <div>
-          I'm a Senior Software Engineer at{" "}
+          I'm the Front End Lead at{" "}
           <a href="https://www.honeybook.com" target="_blank">
             HoneyBook
           </a>
