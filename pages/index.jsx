@@ -19,9 +19,9 @@ const Index = () => {
           👨‍💻
         </div>
         <div>
-          I'm the Front End Lead at{" "}
-          <a href="https://www.honeybook.com" target="_blank">
-            HoneyBook
+          I'm a Front End Consutant at{" "}
+          <a href="https://musedigital.ca/" target="_blank">
+            Muse Software Solutions
           </a>
         </div>
 
