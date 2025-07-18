@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev": "NODE_OPTIONS='--inspect' next",
-    "build": "next build",
+    "dev": "NODE_OPTIONS='--inspect --openssl-legacy-provider' next",
+    "build": "node --openssl-legacy-provider ./node_modules/.bin/next build",
     "start": "next start"
   },
   "keywords": [],
