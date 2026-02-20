@@ -1,3 +1,4 @@
-const withCss = require('@zeit/next-css');
+/** @type {import('next').NextConfig} */
+const nextConfig = {};
 
-module.exports = withCss();
+module.exports = nextConfig;
