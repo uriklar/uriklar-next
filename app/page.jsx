@@ -90,7 +90,6 @@ function yearsDiff(d1, d2) {
 }
 
 export default function Home() {
-  const remoteYears = yearsDiff(new Date("2017-02-19"), Date.now());
 
   return (
     <>
@@ -116,23 +115,13 @@ export default function Home() {
 
           {/* Tagline */}
           <p className="animate-fade-in-delay-2 text-lg text-gray-600 dark:text-gray-400 mb-8">
-            Front End Consultant at{" "}
-            <a
-              href="https://musedigital.ca/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-blue-600 dark:text-blue-400 hover:underline"
-            >
-              Muse Software Solutions
-            </a>
+            Front End Consultant. AI Workflow Advisor.
           </p>
 
           {/* Bio */}
           <div className="animate-fade-in-delay-3 space-y-3 text-gray-700 dark:text-gray-300 mb-10 text-base leading-relaxed">
             <p>
-              Passionate about web development and teaching developers to make
-              their first steps. Remote worker since 2017 — that&apos;s {remoteYears}{" "}
-              years and counting.
+              I help companies build better software &mdash; and ship faster with AI.
             </p>
             <p>
               Proud husband and father of two. 👨‍👩‍👦‍👦
