@@ -122,6 +122,8 @@ export default function Home() {
           <div className="animate-fade-in-delay-3 space-y-3 text-gray-700 dark:text-gray-300 mb-10 text-base leading-relaxed">
             <p>
               I help companies build better software &mdash; and ship faster with AI.
+              From setting up coding agents to designing end-to-end AI workflows,
+              I advise teams on making AI a real part of how they build.
             </p>
             <p>
               Proud husband and father of two. 👨‍👩‍👦‍👦
